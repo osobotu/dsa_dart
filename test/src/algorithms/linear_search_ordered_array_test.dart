@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:dsa_dart/src/algorithms/algorithms.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
@@ -14,6 +16,13 @@ void main() {
     test('202 not in array', () {
       final int result =
           linearSearchOfOrderedArray(array: array, searchValue: 202);
+      expect(result, equals(-1));
+    });
+
+    test('search fails on unordered array', () {
+      final unorderedArray = [3, 100, 5, 17, 90, 23, 78, 45];
+      final int result =
+          linearSearchOfOrderedArray(array: unorderedArray, searchValue: 17);
       expect(result, equals(-1));
     });
   });
