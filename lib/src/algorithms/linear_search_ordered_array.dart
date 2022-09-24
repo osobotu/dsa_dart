@@ -1,5 +1,5 @@
 // Linear search of an ordered array
-int? linearSearchOfOrderedArray(
+int linearSearchOfOrderedArray(
     {required List<int> array, required int searchValue}) {
 //     Iterate over the array
   for (var i = 0; i < array.length; ++i) {
@@ -15,5 +15,5 @@ int? linearSearchOfOrderedArray(
   }
 
 //     Return null if the value is not found.
-  return null;
+  return -1;
 }

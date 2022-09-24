@@ -1,4 +1,4 @@
-int? binarySearch({required List<int> array, required int searchValue}) {
+int binarySearch({required List<int> array, required int searchValue}) {
   var lowerBound = 0;
   var upperBound = array.length - 1;
 
@@ -15,5 +15,5 @@ int? binarySearch({required List<int> array, required int searchValue}) {
       lowerBound = midpoint + 1;
     }
   }
-  return null;
+  return -1;
 }
