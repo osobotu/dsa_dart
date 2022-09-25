@@ -1,6 +1,14 @@
 // Linear search of an ordered array
 int linearSearchOfOrderedArray(
-    {required List<int> array, required int searchValue}) {
+
+    /* 
+  Implementation of Linear Search algorithm in Dart.
+  Input: Ordered array integers
+  Output: Index of [searchValue] if it is found or -1 if it isn't found.
+*/
+
+    {required List<int> array,
+    required int searchValue}) {
 //     Iterate over the array
   for (var i = 0; i < array.length; ++i) {
     final num = array[i];

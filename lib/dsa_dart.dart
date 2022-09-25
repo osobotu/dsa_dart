@@ -1,9 +1,8 @@
-import 'package:dsa_dart/src/src.dart';
+import 'package:dsa_dart/src/problems/problems.dart';
 
 void main() {
-  const numbers = [3, 17, 75, 80, 202];
-  const searchValue = 17;
+  final array = [3, 5, 9, 4, 8];
+  final result = greatestNumber(array);
 
-  final result = binarySearch(array: numbers, searchValue: searchValue);
-  print(result == null ? 'Number not found' : 'Found at index: $result');
+  print(result);
 }
