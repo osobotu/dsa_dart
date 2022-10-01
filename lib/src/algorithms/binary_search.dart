@@ -1,7 +1,7 @@
 int binarySearch({required List<int> array, required int searchValue}) {
   /* 
   Implementation of Binary Search algorithm in Dart.
-  Input: Ordered array integers [array] and search value [searchValue]
+  Input: Ordered array of integers [array] and search value [searchValue]
   Output: Index of [searchValue] if it is found or -1 if it isn't found.
 */
 
