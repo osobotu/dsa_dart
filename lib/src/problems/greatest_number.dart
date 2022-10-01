@@ -7,7 +7,7 @@ Output: Integer
 int greatestNumber(List<int> array) {
   int greatestNumberSoFar = array[1];
 
-  for (var i = 0; i < array.length - 1; i++) {
+  for (var i = 0; i < array.length; i++) {
     if (array[i] > greatestNumberSoFar) {
       greatestNumberSoFar = array[i];
     }
