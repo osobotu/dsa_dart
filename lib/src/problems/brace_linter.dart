@@ -24,7 +24,6 @@ class BraceLinter {
         _stack.push(char);
       } else if (isClosingBrace(char)) {
         final poppedOpeningBrace = _stack.pop();
-        print(poppedOpeningBrace);
 
         if (poppedOpeningBrace == null) {
           return SyntaxError.missingOpeningBrace;
