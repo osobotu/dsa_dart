@@ -7,3 +7,5 @@ export 'find_intersection.dart';
 export 'find_missing_alphabet.dart';
 export 'first_non_duplicate.dart';
 export 'reverse_string.dart';
+export 'total_strings.dart';
+export 'find_even_numbers.dart';
