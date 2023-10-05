@@ -8,9 +8,9 @@ void main() {
       test(
         'should return a reversed string of the given string',
         () {
-          final string = 'abcde';
+          final string = 'abcdef';
           final result = reverseString(string);
-          expect(result, 'edcba');
+          expect(result, 'fedcba');
         },
       );
     },

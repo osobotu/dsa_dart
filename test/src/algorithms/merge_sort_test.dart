@@ -7,14 +7,14 @@ void main() {
     'mergeSort',
     () {
       test(
-        'should return a sorted array given [2, 1, 4, 5, 6, 3]',
+        'should return [1, 2, 3, 4, 5, 6] given [2, 1, 4, 5, 6, 3]',
         () {
           final array = [2, 1, 4, 5, 6, 3];
           expect(mergeSort(array), equals([1, 2, 3, 4, 5, 6]));
         },
       );
       test(
-        'should return a sorted array given [2, 1, 4, 2, 5, 6, 1, 7, 3]',
+        'should return [1, 1, 2, 2, 3, 4, 5, 6, 7] given [2, 1, 4, 2, 5, 6, 1, 7, 3]',
         () {
           final array = [2, 1, 4, 2, 5, 6, 1, 7, 3];
           expect(mergeSort(array), equals([1, 1, 2, 2, 3, 4, 5, 6, 7]));
