@@ -31,9 +31,19 @@ void main() {
 
       test("should do nothing when we delete a value not in the tree", () {
         final root = bst.delete(7, bst.root);
+        bst.traverseAndPrint(bst.root);
 
         // final fiveAgain = bst.search(, root);
         expect(root?.value, 1);
+      });
+    });
+
+    group('findGreatestValue', () {
+      final bst = BinarySearchTree.dummy();
+      test('should return the greatest value in the binary search tree', () {
+        final greatest = bst.findGreatestValue(bst.root);
+
+        expect(greatest?.value, 10);
       });
     });
   });

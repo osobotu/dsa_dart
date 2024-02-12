@@ -100,6 +100,24 @@ class BinarySearchTree<T extends Comparable> {
     }
   }
 
+  void traverseAndPrint(TreeNode? node) {
+    if (node == null) {
+      return;
+    }
+    traverseAndPrint(node.leftChild);
+    print(node.value);
+    traverseAndPrint(node.rightChild);
+  }
+
+  TreeNode? findGreatestValue(TreeNode? node) {
+    if (node?.rightChild == null) {
+      return node;
+    } else {
+      final greatest = findGreatestValue(node?.rightChild);
+      return greatest;
+    }
+  }
+
   // factory BinarySearchTree.fromArray(List<T> array) {
   //   array.shuffle(Random(DateTime.now().millisecond));
   //   final root = TreeNode(value: array[0]);
