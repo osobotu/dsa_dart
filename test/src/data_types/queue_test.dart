@@ -1,11 +1,8 @@
-import 'dart:collection';
-
 import 'package:dsa_dart/src/src.dart';
 import 'package:test/test.dart';
 
 void main() {
   late CustomQueue queue;
-  late Queue queueL;
 
   void initializeAndFillQueue() {
     setUp(() {
