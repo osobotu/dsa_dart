@@ -31,7 +31,7 @@ void main() {
 
       test("should do nothing when we delete a value not in the tree", () {
         final root = bst.delete(7, bst.root);
-        bst.traverseAndPrint(bst.root);
+        // bst.traverseAndPrint(bst.root);
 
         // final fiveAgain = bst.search(, root);
         expect(root?.value, 1);
